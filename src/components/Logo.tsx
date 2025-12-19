@@ -11,7 +11,7 @@ export function Logo({ className }: { className?: string }) {
           className
         )}
       >
-        ESPELD
+        ESPELDESPELHOS
       </span>
     </a>
   );
