@@ -39,9 +39,8 @@ export default function Gallery() {
                       <Image
                         src={image.imageUrl}
                         alt={image.description}
-                        layout="fill"
-                        objectFit="cover"
-                        className="transition-transform duration-500 group-hover:scale-105"
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
                         data-ai-hint={image.imageHint}
                       />
                       <div className="absolute top-3 right-3 bg-black/40 text-white p-2 rounded-full backdrop-blur-sm">

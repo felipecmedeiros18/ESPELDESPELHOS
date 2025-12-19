@@ -141,7 +141,7 @@ export default function VisualizeForm() {
                  <input type="hidden" name="photoDataUri" value={preview || ''} />
                  {preview ? (
                     <div className="relative aspect-video w-full rounded-md overflow-hidden border">
-                         <Image src={preview} alt="Pré-visualização do ambiente" layout="fill" objectFit="cover" />
+                         <Image src={preview} alt="Pré-visualização do ambiente" fill className="object-cover" />
                          <Button variant="destructive" size="icon" className="absolute top-2 right-2 h-8 w-8" onClick={clearPreview}>
                             <X className="h-4 w-4" />
                             <span className="sr-only">Remover Imagem</span>
@@ -182,7 +182,7 @@ export default function VisualizeForm() {
                     <h3 className="text-lg font-semibold text-center">3. Veja a mágica acontecer</h3>
                     <div className="relative aspect-video w-full rounded-md overflow-hidden border bg-muted/30">
                         {state.visualizedImage ? (
-                            <Image src={state.visualizedImage} alt="Visualização do espelho no ambiente" layout="fill" objectFit="cover" />
+                            <Image src={state.visualizedImage} alt="Visualização do espelho no ambiente" fill className="object-cover" />
                         ) : state.originalImage && !state.error ? (
                             <div className="w-full h-full flex flex-col items-center justify-center">
                                 <Loader2 className="h-10 w-10 animate-spin text-primary" />

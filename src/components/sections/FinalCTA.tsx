@@ -13,9 +13,8 @@ export default function FinalCTA() {
              <Image
                 src={ctaImage.imageUrl}
                 alt={ctaImage.description}
-                layout="fill"
-                objectFit="cover"
-                className="z-0"
+                fill
+                className="object-cover z-0"
                 data-ai-hint={ctaImage.imageHint}
             />
         )}
