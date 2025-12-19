@@ -11,8 +11,8 @@ const testimonials = [
     imageId: "testimonial-1",
   },
   {
-    name: "Fernando M.",
-    location: "Leblon, RJ",
+    name: "",
+    location: "",
     quote: "Qualidade e sofisticação definem. O espelho orgânico ficou incrível no meu closet. Recomendo muito a ESPELD.",
     imageId: "testimonial-2",
   },
