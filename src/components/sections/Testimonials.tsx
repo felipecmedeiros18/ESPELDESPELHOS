@@ -19,7 +19,7 @@ const testimonials = [
   {
     name: "",
     location: "",
-    quote: "Nossos clientes amaram os novos espelhos da recepção. Trouxe um ar de modernidade e elegância para o espaço.",
+    quote: "",
     imageId: "testimonial-3",
   },
 ];
@@ -43,14 +43,14 @@ export default function Testimonials() {
                    <CardHeader className="p-0">
                         <div className="aspect-square relative w-full">
                              <Avatar className="h-full w-full rounded-none">
-                                <AvatarImage src={image.imageUrl} alt={`Foto de ${testimonial.name}`} data-ai-hint={image.imageHint} className="object-cover object-[50%_30%]" />
+                                <AvatarImage src={image.imageUrl} alt={`Foto de ${testimonial.name}`} data-ai-hint={image.imageHint} className="object-cover object-center object-[50%_30%]" />
                                 <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                              </Avatar>
                         </div>
                    </CardHeader>
                 )}
                 <CardContent className="p-6 flex-grow flex flex-col">
-                  <p className="text-muted-foreground flex-grow">"{testimonial.quote}"</p>
+                  {testimonial.quote && <p className="text-muted-foreground flex-grow">"{testimonial.quote}"</p>}
                   <div className="flex items-center gap-4 mt-6 pt-6 border-t">
                     <div>
                       {testimonial.name && <p className="font-semibold text-foreground">{testimonial.name}</p>}
