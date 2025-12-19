@@ -39,7 +39,7 @@
     {
       "id": "gallery-6",
       "description": "A stylish commercial space, like a salon, with multiple LED mirror stations.",
-      "imageUrl": "https://images.unsplash.com/photo-1645784125191-d93e079b5861?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb21tZXJjaWFsJTIwbWlycm9yfGVufDB8fHx8MTc2NjE1ODQwMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/wVeKdoO.png",
       "imageHint": "commercial mirror"
     },
     {
@@ -51,7 +51,7 @@
     {
       "id": "testimonial-1",
       "description": "A smiling woman in her mid-30s.",
-      "imageUrl": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2NjA3MDMzMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8fDE3NjYwNzA0Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman portrait"
     },
     {
