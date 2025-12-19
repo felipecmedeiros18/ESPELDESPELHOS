@@ -6,7 +6,7 @@
  * - VisualizeMirrorInSpaceInput - The input type for the visualizeMirrorInSpace function.
  * - VisualizeMirrorInSpaceOutput - The return type for the visualizeMirrorInSpace function.
  */
-import { config } from 'dotenv';
+import {config} from 'dotenv';
 config();
 
 import {ai} from '@/ai/genkit';
@@ -39,7 +39,10 @@ const visualizeMirrorInSpacePrompt = ai.definePrompt({
   output: {schema: VisualizeMirrorInSpaceOutputSchema},
   prompt: [
     {
-      media: {url: '{{photoDataUri}}'},
+      media: {
+        url: '{{photoDataUri}}',
+        contentType: '{{photoDataUriMimeType}}',
+      },
     },
     {
       text: `Generate an image of this room with the following LED mirror design: {{{mirrorDesignDescription}}}. Make the mirror look realistic and naturally integrated into the space.`,
@@ -58,7 +61,11 @@ const visualizeMirrorInSpaceFlow = ai.defineFlow(
     outputSchema: VisualizeMirrorInSpaceOutputSchema,
   },
   async input => {
-    const {media} = await visualizeMirrorInSpacePrompt(input);
+    const photoDataUriMimeType = input.photoDataUri.match(/data:(.*);base64,/)?.[1];
+    const {media} = await visualizeMirrorInSpacePrompt({
+      ...input,
+      photoDataUriMimeType,
+    });
     return {visualizedImage: media!.url!};
   }
 );
