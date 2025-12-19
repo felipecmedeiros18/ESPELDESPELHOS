@@ -1,1 +1,11 @@
-import '@/ai/flows/visualize-mirror-in-space.ts';
+'use server';
+/**
+ * @fileOverview Initializes and configures the Genkit AI instance.
+ */
+import {genkit} from 'genkit';
+import {googleAI} from '@genkit-ai/google-genai';
+
+export const ai = genkit({
+  plugins: [googleAI()],
+  model: 'googleai/gemini-2.5-flash',
+});
