@@ -18,7 +18,7 @@ const testimonials = [
   },
   {
     name: "",
-    location: "Ipanema, RJ",
+    location: "",
     quote: "Nossos clientes amaram os novos espelhos da recepção. Trouxe um ar de modernidade e elegância para o espaço.",
     imageId: "testimonial-3",
   },
@@ -54,7 +54,7 @@ export default function Testimonials() {
                   <div className="flex items-center gap-4 mt-6 pt-6 border-t">
                     <div>
                       {testimonial.name && <p className="font-semibold text-foreground">{testimonial.name}</p>}
-                      <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                      {testimonial.location && <p className="text-sm text-muted-foreground">{testimonial.location}</p>}
                     </div>
                   </div>
                 </CardContent>
