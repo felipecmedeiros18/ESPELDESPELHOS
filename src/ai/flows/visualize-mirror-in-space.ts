@@ -32,13 +32,10 @@ export async function visualizeMirrorInSpace(input: VisualizeMirrorInSpaceInput)
 
 const visualizeMirrorInSpacePrompt = ai.definePrompt({
   name: 'visualizeMirrorInSpacePrompt',
-  input: {schema: VisualizeMirrorInSpaceInputSchema.extend({ photoDataUriMimeType: z.string().optional() })},
+  input: {schema: VisualizeMirrorInSpaceInputSchema},
   output: {schema: VisualizeMirrorInSpaceOutputSchema},
   prompt: `Generate a realistic image of a room with an LED mirror integrated naturally into the space, based on the following description: {{{mirrorDesignDescription}}}.`,
-  model: 'googleai/gemini-2.5-flash-image-preview',
-  config: {
-    responseModalities: ['TEXT', 'IMAGE'],
-  },
+  model: 'googleai/imagen-4.0-fast-generate-001',
 });
 
 
@@ -49,11 +46,7 @@ const visualizeMirrorInSpaceFlow = ai.defineFlow(
     outputSchema: VisualizeMirrorInSpaceOutputSchema,
   },
   async input => {
-    const photoDataUriMimeType = input.photoDataUri.match(/data:(.*);base64,/)?.[1];
-    const {media} = await visualizeMirrorInSpacePrompt({
-      ...input,
-      photoDataUriMimeType,
-    });
+    const {media} = await visualizeMirrorInSpacePrompt(input);
     if (!media?.url) {
       throw new Error('Failed to generate image. No media URL returned.');
     }
