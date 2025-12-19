@@ -1,3 +1,82 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "Modern bathroom with a large, backlit round LED mirror over a sleek vanity.",
+      "imageUrl": "https://images.unsplash.com/photo-1742448261371-2e3dc48d98b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsZWQlMjBtaXJyb3IlMjBiYXRocm9vbXxlbnwwfHx8fDE3NjYxNTg0MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "led mirror bathroom"
+    },
+    {
+      "id": "gallery-1",
+      "description": "An organic, irregularly shaped LED mirror mounted on a dark textured wall in a living room.",
+      "imageUrl": "https://images.unsplash.com/photo-1727356252022-54b84d08d403?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvcmdhbmljJTIwbWlycm9yfGVufDB8fHx8MTc2NjE1ODQwMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "organic mirror"
+    },
+    {
+      "id": "gallery-2",
+      "description": "A close-up of a rectangular mirror with integrated front LED lighting, showing clear reflection.",
+      "imageUrl": "https://images.unsplash.com/photo-1748525938712-a065b4396ba4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsZWQlMjBtaXJyb3J8ZW58MHx8fHwxNzY2MTU4NDAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "led mirror"
+    },
+    {
+      "id": "gallery-3",
+      "description": "A luxurious bathroom featuring dual oval LED mirrors above a double sink.",
+      "imageUrl": "https://images.unsplash.com/photo-1690603935467-630341102dd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiYXRocm9vbSUyMG1pcnJvcnN8ZW58MHx8fHwxNzY2MTU4NDAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bathroom mirrors"
+    },
+    {
+      "id": "gallery-4",
+      "description": "A full-length LED mirror in a walk-in closet, illuminating the space.",
+      "imageUrl": "https://images.unsplash.com/photo-1749878061906-068d13c47f66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjbG9zZXQlMjBtaXJyb3J8ZW58MHx8fHwxNzY2MTU4NDAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "closet mirror"
+    },
+    {
+      "id": "gallery-5",
+      "description": "A chic bedroom with a large circular LED mirror above the dresser.",
+      "imageUrl": "https://images.unsplash.com/photo-1602164091410-255d1bf88959?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiZWRyb29tJTIwbWlycm9yfGVufDB8fHx8MTc2NjE1ODQwMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bedroom mirror"
+    },
+    {
+      "id": "gallery-6",
+      "description": "A stylish commercial space, like a salon, with multiple LED mirror stations.",
+      "imageUrl": "https://images.unsplash.com/photo-1645784125191-d93e079b5861?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb21tZXJjaWFsJTIwbWlycm9yfGVufDB8fHx8MTc2NjE1ODQwMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "commercial mirror"
+    },
+    {
+      "id": "about-image",
+      "description": "A craftsman carefully inspecting the edge of a custom-shaped mirror.",
+      "imageUrl": "https://images.unsplash.com/photo-1760809964623-8e0c004b23e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjcmFmdHNtYW4lMjBtaXJyb3J8ZW58MHx8fHwxNzY2MTU4NDAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "craftsman mirror"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "A smiling woman in her mid-30s.",
+      "imageUrl": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2NjA3MDMzMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "A happy man in his early 40s.",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjYxNTY0NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "A stylish young couple.",
+      "imageUrl": "https://images.unsplash.com/photo-1627675382774-efb7caab2370?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb3VwbGUlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjYwNTQzMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "couple portrait"
+    },
+    {
+      "id": "final-cta-background",
+      "description": "A dramatic shot of a single, brightly lit organic mirror against a completely dark background.",
+      "imageUrl": "https://images.unsplash.com/photo-1636625632436-6f7f823341aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkYXJrJTIwbWlycm9yfGVufDB8fHx8MTc2NjE1ODQwMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dark mirror"
+    },
+    {
+      "id": "visualize-placeholder",
+      "description": "An empty room with a placeholder frame on the wall.",
+      "imageUrl": "https://images.unsplash.com/photo-1630699144339-420f59b4747b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlbXB0eSUyMHJvb218ZW58MHx8fHwxNzY2MTM2ODQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "empty room"
+    }
+  ]
 }
