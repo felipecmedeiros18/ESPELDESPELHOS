@@ -11,7 +11,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 
-const WHATSAPP_LINK = "https://wa.me/5521999999999"; // Replace with actual number
+const WHATSAPP_LINK = "https://wa.me/5521967043634"; 
 
 export default function FloatingWhatsApp() {
   const [isVisible, setIsVisible] = useState(false);

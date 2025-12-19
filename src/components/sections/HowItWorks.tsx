@@ -19,7 +19,7 @@ const steps = [
   },
 ];
 
-const WHATSAPP_LINK = "https://wa.me/5521999999999?text=Olá! Gostaria de falar com um especialista.";
+const WHATSAPP_LINK = "https://wa.me/5521967043634?text=Olá! Gostaria de falar com um especialista.";
 
 export default function HowItWorks() {
   return (

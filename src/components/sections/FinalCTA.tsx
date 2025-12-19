@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
-const WHATSAPP_LINK = "https://wa.me/5521999999999?text=Olá! Gostaria de solicitar um orçamento.";
+const WHATSAPP_LINK = "https://wa.me/5521967043634?text=Olá! Gostaria de solicitar um orçamento.";
 
 export default function FinalCTA() {
   const ctaImage = PlaceHolderImages.find((img) => img.id === 'final-cta-background');

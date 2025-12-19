@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { PenTool, Lightbulb, Sparkles } from 'lucide-react';
 
-const WHATSAPP_LINK = "https://wa.me/5521999999999?text=Olá! Gostaria de solicitar um orçamento.";
+const WHATSAPP_LINK = "https://wa.me/5521967043634?text=Olá! Gostaria de solicitar um orçamento.";
 
 export default function Hero() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
