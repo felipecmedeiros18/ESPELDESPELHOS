@@ -31,7 +31,7 @@ export default function Testimonials() {
         <div className="space-y-4 text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Amado por nossos clientes</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed">
-                Veja o que dizem sobre os espelhos que criamos com tanto carinho.
+                Veja o trabalho que criamos com carinho.
             </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
