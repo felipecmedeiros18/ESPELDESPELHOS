@@ -9,12 +9,13 @@ import Testimonials from "@/components/sections/Testimonials";
 import FinalCTA from "@/components/sections/FinalCTA";
 import Footer from "@/components/layout/Footer";
 import { ScrollAnimation } from "@/components/ScrollAnimation";
+import ClientOnlyHeader from "@/components/layout/ClientOnlyHeader";
 
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
+      <ClientOnlyHeader />
       <main className="flex-1">
         <Hero />
         <ScrollAnimation>
