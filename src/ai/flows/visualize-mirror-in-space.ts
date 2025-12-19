@@ -34,17 +34,7 @@ const visualizeMirrorInSpacePrompt = ai.definePrompt({
   name: 'visualizeMirrorInSpacePrompt',
   input: {schema: VisualizeMirrorInSpaceInputSchema.extend({ photoDataUriMimeType: z.string().optional() })},
   output: {schema: VisualizeMirrorInSpaceOutputSchema},
-  prompt: [
-    {
-      media: {
-        url: '{{photoDataUri}}',
-        contentType: '{{photoDataUriMimeType}}',
-      },
-    },
-    {
-      text: `Generate an image of this room with the following LED mirror design: {{{mirrorDesignDescription}}}. Make the mirror look realistic and naturally integrated into the space.`,
-    },
-  ],
+  prompt: `Generate an image of this room with the following LED mirror design: {{{mirrorDesignDescription}}}. Make the mirror look realistic and naturally integrated into the space.`,
   model: 'googleai/gemini-2.5-flash-image-preview',
   config: {
     responseModalities: ['TEXT', 'IMAGE'],
@@ -63,6 +53,9 @@ const visualizeMirrorInSpaceFlow = ai.defineFlow(
       ...input,
       photoDataUriMimeType,
     });
-    return {visualizedImage: media!.url!};
+    if (!media?.url) {
+      throw new Error('Failed to generate image. No media URL returned.');
+    }
+    return {visualizedImage: media.url};
   }
 );
