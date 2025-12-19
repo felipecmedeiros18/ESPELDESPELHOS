@@ -17,7 +17,7 @@ const testimonials = [
     imageId: "testimonial-2",
   },
   {
-    name: "Clínica Visage",
+    name: "",
     location: "Ipanema, RJ",
     quote: "Nossos clientes amaram os novos espelhos da recepção. Trouxe um ar de modernidade e elegância para o espaço.",
     imageId: "testimonial-3",
@@ -43,7 +43,7 @@ export default function Testimonials() {
                    <CardHeader className="p-0">
                         <div className="aspect-square relative w-full">
                              <Avatar className="h-full w-full rounded-none">
-                                <AvatarImage src={image.imageUrl} alt={`Foto de ${testimonial.name}`} data-ai-hint={image.imageHint} className="object-cover object-[50%_20%]" />
+                                <AvatarImage src={image.imageUrl} alt={`Foto de ${testimonial.name}`} data-ai-hint={image.imageHint} className="object-cover object-[50%_30%]" />
                                 <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                              </Avatar>
                         </div>
@@ -53,7 +53,7 @@ export default function Testimonials() {
                   <p className="text-muted-foreground flex-grow">"{testimonial.quote}"</p>
                   <div className="flex items-center gap-4 mt-6 pt-6 border-t">
                     <div>
-                      <p className="font-semibold text-foreground">{testimonial.name}</p>
+                      {testimonial.name && <p className="font-semibold text-foreground">{testimonial.name}</p>}
                       <p className="text-sm text-muted-foreground">{testimonial.location}</p>
                     </div>
                   </div>
