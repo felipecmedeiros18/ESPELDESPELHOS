@@ -6,6 +6,8 @@
  * - VisualizeMirrorInSpaceInput - The input type for the visualizeMirrorInSpace function.
  * - VisualizeMirrorInSpaceOutput - The return type for the visualizeMirrorInSpace function.
  */
+import { config } from 'dotenv';
+config();
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
