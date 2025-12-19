@@ -7,13 +7,13 @@ const testimonials = [
   {
     name: "",
     location: "",
-    quote: "Transformou completamente meu banheiro. A iluminação é perfeita e o acabamento impecável. Atendimento nota 10!",
+    quote: "",
     imageId: "testimonial-1",
   },
   {
     name: "",
     location: "",
-    quote: "Qualidade e sofisticação definem. O espelho orgânico ficou incrível no meu closet. Recomendo muito a ESPELD.",
+    quote: "",
     imageId: "testimonial-2",
   },
   {
