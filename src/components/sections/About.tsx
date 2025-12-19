@@ -20,10 +20,10 @@ export default function About() {
           <div className="space-y-6">
             <div className="space-y-3">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
-                Sobre a ESPELD
+                Sobre a ESPELDESPELHOS
               </h2>
               <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                A ESPELD é especializada na criação de espelhos LED e orgânicos que unem tecnologia, design e acabamento impecável. Cada peça é pensada para valorizar o ambiente, trazendo conforto visual e sofisticação.
+                A ESPELDESPELHOS é especializada na criação de espelhos LED e orgânicos que unem tecnologia, design e acabamento impecável. Cada peça é pensada para valorizar o ambiente, trazendo conforto visual e sofisticação.
               </p>
             </div>
             <ul className="grid gap-4">
