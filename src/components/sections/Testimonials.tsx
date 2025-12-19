@@ -5,8 +5,8 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const testimonials = [
   {
-    name: "Juliana R.",
-    location: "Barra da Tijuca, RJ",
+    name: "",
+    location: "",
     quote: "Transformou completamente meu banheiro. A iluminação é perfeita e o acabamento impecável. Atendimento nota 10!",
     imageId: "testimonial-1",
   },
