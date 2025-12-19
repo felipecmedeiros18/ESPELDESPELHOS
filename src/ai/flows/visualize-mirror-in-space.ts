@@ -6,7 +6,7 @@
  * - VisualizeMirrorInSpaceInput - The input type for the visualizeMirrorInSpace function.
  * - VisualizeMirrorInSpaceOutput - The return type for the visualizeMirrorInSpace function.
  */
-import {ai} from '@/ai/genkit';
+import {ai} from '../genkit';
 import {z} from 'genkit';
 
 const VisualizeMirrorInSpaceInputSchema = z.object({
@@ -34,12 +34,13 @@ const visualizeMirrorInSpacePrompt = ai.definePrompt({
   name: 'visualizeMirrorInSpacePrompt',
   input: {schema: VisualizeMirrorInSpaceInputSchema.extend({ photoDataUriMimeType: z.string().optional() })},
   output: {schema: VisualizeMirrorInSpaceOutputSchema},
-  prompt: `Generate an image of this room with the following LED mirror design: {{{mirrorDesignDescription}}}. Make the mirror look realistic and naturally integrated into the space.`,
+  prompt: `Generate a realistic image of a room with an LED mirror integrated naturally into the space, based on the following description: {{{mirrorDesignDescription}}}.`,
   model: 'googleai/gemini-2.5-flash-image-preview',
   config: {
     responseModalities: ['TEXT', 'IMAGE'],
   },
 });
+
 
 const visualizeMirrorInSpaceFlow = ai.defineFlow(
   {
