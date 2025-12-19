@@ -43,7 +43,7 @@ export default function Testimonials() {
                    <CardHeader className="p-0">
                         <div className="aspect-square relative w-full">
                              <Avatar className="h-full w-full rounded-none">
-                                <AvatarImage src={image.imageUrl} alt={`Foto de ${testimonial.name}`} data-ai-hint={image.imageHint} className="object-cover" />
+                                <AvatarImage src={image.imageUrl} alt={`Foto de ${testimonial.name}`} data-ai-hint={image.imageHint} className="object-cover object-[50%_20%]" />
                                 <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                              </Avatar>
                         </div>
