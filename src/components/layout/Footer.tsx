@@ -2,7 +2,7 @@ import { MapPin, MessageCircle, Instagram } from "lucide-react";
 import { Logo } from "@/components/Logo";
 
 const WHATSAPP_LINK = "https://wa.me/5521999999999";
-const INSTAGRAM_LINK = "https://instagram.com/espeld";
+const INSTAGRAM_LINK = "https://www.instagram.com/espeldespelhos/";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
