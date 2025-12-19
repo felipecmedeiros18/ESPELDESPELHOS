@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
-import { useFormState, useFormStatus } from "react-dom";
+import { useEffect, useState, useRef, useActionState } from "react";
+import { useFormStatus } from "react-dom";
 import Image from "next/image";
 import { z } from "zod";
 import { visualizeMirrorInSpace } from "@/ai/flows/visualize-mirror-in-space";
@@ -78,7 +78,7 @@ function SubmitButton() {
 }
 
 export default function VisualizeForm() {
-  const [state, formAction] = useFormState(visualizeAction, initialState);
+  const [state, formAction] = useActionState(visualizeAction, initialState);
   const [preview, setPreview] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const { toast } = useToast();
