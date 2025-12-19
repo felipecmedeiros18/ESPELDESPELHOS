@@ -4,7 +4,6 @@ import Gallery from "@/components/sections/Gallery";
 import About from "@/components/sections/About";
 import Differentiators from "@/components/sections/Differentiators";
 import HowItWorks from "@/components/sections/HowItWorks";
-import Visualize from "@/components/sections/Visualize";
 import Testimonials from "@/components/sections/Testimonials";
 import FinalCTA from "@/components/sections/FinalCTA";
 import Footer from "@/components/layout/Footer";
@@ -29,9 +28,6 @@ export default function Home() {
         </ScrollAnimation>
         <ScrollAnimation>
           <HowItWorks />
-        </ScrollAnimation>
-        <ScrollAnimation>
-          <Visualize />
         </ScrollAnimation>
         <ScrollAnimation>
           <Testimonials />
