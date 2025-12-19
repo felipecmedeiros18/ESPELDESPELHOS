@@ -6,9 +6,6 @@
  * - VisualizeMirrorInSpaceInput - The input type for the visualizeMirrorInSpace function.
  * - VisualizeMirrorInSpaceOutput - The return type for the visualizeMirrorInSpace function.
  */
-import {config} from 'dotenv';
-config();
-
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
@@ -35,7 +32,7 @@ export async function visualizeMirrorInSpace(input: VisualizeMirrorInSpaceInput)
 
 const visualizeMirrorInSpacePrompt = ai.definePrompt({
   name: 'visualizeMirrorInSpacePrompt',
-  input: {schema: VisualizeMirrorInSpaceInputSchema},
+  input: {schema: VisualizeMirrorInSpaceInputSchema.extend({ photoDataUriMimeType: z.string().optional() })},
   output: {schema: VisualizeMirrorInSpaceOutputSchema},
   prompt: [
     {
